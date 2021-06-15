@@ -1,0 +1,55 @@
+body {
+    background: linear-gradient(90deg, hsla(16, 100%, 76%, 1) 0%, hsla(49, 100%, 81%, 1) 100%);
+    font-family: 'Josefin Slab', serif;
+    font-size: x-large;
+    
+}
+
+.matchingDays {
+    background-color: white;
+    width: 380px;
+    min-height: 100%;
+    margin: auto;
+    padding: 10px 0 20px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px -10px #000;
+    overflow: hidden;
+    width: 75%;
+    margin-top: 7%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.days {
+    margin-left: 7%;
+    width: 85%;
+    border-style: solid;
+    border-width: thin;
+}
+
+.weekdays {
+    padding: 0 0 0 0;
+    text-align: center;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.dateOne, .dateTwo {
+    margin: 5%;
+}
+
+.dates {
+    margin: 5%
+}
+.firstColor{
+    color:hsla(16, 100%, 76%, 1) 0%;
+}
+.secondColor{
+    color: hsla(49, 100%, 81%, 1) 100%;
+}
+.matchColor{
+    color: #99d98c;
+}

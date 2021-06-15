@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+    <script type="text/x-template" class="daysTemplate">
+        <ul class="weekdays">
+        {{#each day}}
+        <li>{{this}}</li>
+        {{/each}}
+        </ul>
+     </script>
+    <link rel="stylesheet" href="matchingDays.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@300&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matching Days</title>
+</head>
+
+<body>
+    <div class="matchingDays">
+        <div class="head">
+            <h1>Matching Days</h1>
+        </div>
+        <div class="days"></div>
+        <div class="dates">
+            <div class="dateOne">
+                <label for="first">First date:</label>
+
+                <input type="date" id="first" name="first-date" value="" onchange="getWeek()">
+
+                <div class="dateTwo">
+                    <label for="second">Second date:</label>
+
+                    <input type="date" id="second" name="second-date" value="" onchange="getWeek()">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./matchingDaysFactory.js" charset="utf-8"></script>
+    <script src="./matchingDays.js" charset="utf-8"></script>
+
+</body>
+
+</html>

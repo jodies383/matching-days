@@ -4,12 +4,12 @@
 <head>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
     <script type="text/x-template" class="daysTemplate">
-        <ul class="weekdays">
+        <!-- <ul class="weekdays"> -->
         {{#each day}}
-        <li>{{this}}</li>
-        {{/each}}
-        </ul>
-     </script>
+    <span>{{this}}</span>
+    {{/each}}
+    <!-- </ul> -->
+    </script>
     <link rel="stylesheet" href="matchingDays.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@300&display=swap" rel="stylesheet">
@@ -18,6 +18,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matching Days</title>
 </head>
+<header>
+
+</header>
 
 <body>
     <div class="matchingDays">
@@ -34,7 +37,7 @@
                 <div class="dateTwo">
                     <label for="second">Second date:</label>
 
-                    <input type="date" id="second" name="second-date" value="" onchange="getWeek()">
+                    <input type="date" id="second" name="second-date" value="" onchange="getWeek2()">
                 </div>
             </div>
         </div>

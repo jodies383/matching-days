@@ -1,45 +1,45 @@
 function matchingDays() {
-    
+
+    var weekday = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
     function getDayOne(date) {
 
-        var d = new Date(date);
-        var weekday = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
-        
-        var n = weekday[d.getDate()];
-        return n;
-        }
+        var setDate = new Date(date);
 
-        function getDayTwo(date) {
+        var getDate = weekday[setDate.getDay()];
+        return getDate;
+    }
 
-            var d = new Date(date);
-            var weekday = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
-            
-            var n = weekday[d.getDate()];
-            // console.log(n);
-            return n;
-            
-        }
+    function getDayTwo(date) {
 
-    
-    function sameDay(date1, date2) {
-        
-        var theDate = new Date(date1).getDay();
-        var otherDate = new Date(date2).getDay();
+        var setDate = new Date(date);
 
-        if (theDate === otherDate) {
-            return green();
-        }
-        
+        var getDate = weekday[setDate.getDay()];
+        return getDate;
 
+    }
+    function getDayOneIndex(date) {
+
+        var setDate = new Date(date);
+
+        var getDate = setDate.getDay();
+        return getDate
     }
     function green() {
         return ("matchColor");
     }
+    function firstMatch() {
+        return ("firstColor");
+    }
+    function secondMatch() {
+        return ("secondColor");
+    }
     return {
         getDayOne,
         getDayTwo,
-        sameDay,
-        green
+        getDayOneIndex,
+        green,
+        firstMatch,
+        secondMatch
     }
 }

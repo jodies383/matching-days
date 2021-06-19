@@ -25,21 +25,25 @@ function matchingDays() {
         var getDate = setDate.getDay();
         return getDate
     }
-    function green() {
-        return ("matchColor");
+    function sameDayOne(date1, date2) {
+        if (getDayOne(date1) === getDayTwo(date2)) {
+            return ("matchColor")
+        } else if (getDayOne(date1) != getDayTwo(date2)) {
+            return ("firstColor")
+        }
     }
-    function firstMatch() {
-        return ("firstColor");
-    }
-    function secondMatch() {
-        return ("secondColor");
+    function sameDayTwo(date1, date2) {
+        if (getDayOne(date1) === getDayTwo(date2)) {
+            return ("matchColor")
+        } else if (getDayOne(date1) != getDayTwo(date2)) {
+            return ("secondColor")
+        }
     }
     return {
         getDayOne,
         getDayTwo,
         getDayOneIndex,
-        green,
-        firstMatch,
-        secondMatch
+        sameDayOne,
+        sameDayTwo
     }
 }

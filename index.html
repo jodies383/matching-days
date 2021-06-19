@@ -4,11 +4,11 @@
 <head>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
     <script type="text/x-template" class="daysTemplate">
-        <!-- <ul class="weekdays"> -->
+  
         {{#each day}}
-    <span>{{this}}</span>
+    <li>{{this}}</li>
     {{/each}}
-    <!-- </ul> -->
+  
     </script>
     <link rel="stylesheet" href="matchingDays.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -19,13 +19,14 @@
     <title>Matching Days</title>
 </head>
 <header>
-
 </header>
 
 <body>
     <div class="matchingDays">
         <div class="head">
             <h1>Matching Days</h1>
+            <p>Choose a date to highlight that specific day,<br> matching days are displayed in green.</p>
+
         </div>
         <div class="days"></div>
         <div class="dates">

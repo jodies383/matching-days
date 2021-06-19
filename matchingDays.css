@@ -28,8 +28,10 @@ body {
     border-width: thin;
 }
 
-span {
-    margin: 5%;
+li {
+    margin: 1%;
+    list-style: none;
+    display:inline-block;
 }
 
 .dateOne, .dateTwo {
@@ -37,7 +39,7 @@ span {
 }
 
 .dates {
-    margin: 5%
+    margin: 2%
 }
 .firstColor{
     background-color:#ffa685;
